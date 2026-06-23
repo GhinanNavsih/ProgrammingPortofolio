@@ -10,6 +10,8 @@ export default function StackProgress() {
   const {isDark} = useContext(StyleContext);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  console.log("[StackProgress] Rendered. Viewport width:", window.innerWidth, "isDark:", isDark);
+
   if (!portfolioProjects || !portfolioProjects.display) {
     return null;
   }

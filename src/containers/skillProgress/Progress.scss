@@ -13,15 +13,14 @@
 }
 
 .skills-container > * {
-  flex: 1;
   margin-bottom: 30px;
 }
 
 .skills-bar {
+  flex: 2.2;
   position: relative;
-  overflow: visible; /* Allows sliding cards to slide past the 50% boundary into the Lottie area */
+  overflow: visible; /* Allows sliding cards to slide past the boundary into the Lottie area */
   z-index: 1;
-  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -242,6 +241,7 @@
 }
 
 .skills-image {
+  flex: 1;
   position: relative;
   z-index: 10; /* Keep it on top of sliding cards */
   background-color: $lightBackground1; /* Solid mask for light theme */

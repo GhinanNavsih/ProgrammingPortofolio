@@ -17,8 +17,7 @@
 }
 
 .skills-bar {
-  flex: 1.7;
-  max-width: 840px; /* Cap width to show exactly 2 whole cards on large screens */
+  flex: 1.8;
   position: relative;
   overflow: visible; /* Allows sliding cards to slide past the boundary into the Lottie area */
   z-index: 1;
@@ -242,7 +241,7 @@
 }
 
 .skills-image {
-  flex: 1;
+  flex: 1.2;
   position: relative;
   z-index: 10; /* Keep it on top of sliding cards */
   background-color: $lightBackground1; /* Solid mask for light theme */
@@ -254,7 +253,7 @@
   /* Keep the Lottie animation at a beautiful, standard size */
   & > div {
     width: 100%;
-    max-width: 500px;
+    max-width: 580px;
   }
 
   /* Opaque overlay mask extending past the right edge of container into viewport margin */

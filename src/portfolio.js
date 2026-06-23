@@ -49,7 +49,8 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "A DEDICATED SOFTWARE QUALITY ASSURANCE ENGINEER AND DATA ENTHUSIAST",
+  subTitle:
+    "A DEDICATED SOFTWARE QUALITY ASSURANCE ENGINEER AND DATA ENTHUSIAST",
   skills: [
     emoji(
       "⚡ Ensure defect-free product delivery by combining automated and manual quality assurance methodologies"
@@ -403,49 +404,56 @@ const portfolioProjects = {
   projects: [
     {
       title: "Asrama Management System",
-      description: "An integrated web platform for managing registrations, payments, attendance monitoring, and leave permissions for boarding school students.",
+      description:
+        "An integrated web platform for managing registrations, payments, attendance monitoring, and leave permissions for boarding school students.",
       techStack: ["Next.js", "Firebase", "Zustand", "Tailwind CSS"],
       link: "https://esantren-chosyiah.vercel.app/",
       logo: require("./assets/images/esantrenLogo.png")
     },
     {
       title: "Canteen375 Membership App",
-      description: "A customer loyalty, self-ordering, and real-time leaderboard gamification platform designed for campus canteens.",
+      description:
+        "A customer loyalty, self-ordering, and real-time leaderboard gamification platform designed for campus canteens.",
       techStack: ["Next.js", "Firebase", "TypeScript", "Tailwind CSS"],
       link: "https://canteen-375-registration.vercel.app/leaderboard",
       logo: require("./assets/images/canteen375Logo.png")
     },
     {
       title: "Sistem Administrasi Keuangan UNIPDU",
-      description: "An enterprise internal admin console managing employee directories, multi-tiered salary matrices, automated grid-aligned OCR attendance sheet scanners, and PDF payslip deliveries.",
+      description:
+        "An enterprise internal admin console managing employee directories, multi-tiered salary matrices, automated grid-aligned OCR attendance sheet scanners, and PDF payslip deliveries.",
       techStack: ["Next.js", "Firebase", "TypeScript", "Python (OCR)"],
       link: "https://saku.unipdu.ac.id",
       logo: require("./assets/images/yapetiduLogo.png")
     },
     {
       title: "Koperasi UNIPDU SuperApp",
-      description: "An enterprise cooperative system managing retail transactions, savings-loan accounts, multi-role financial audits, and barcode rewards.",
+      description:
+        "An enterprise cooperative system managing retail transactions, savings-loan accounts, multi-role financial audits, and barcode rewards.",
       techStack: ["React.js", "Firebase", "Tailwind CSS", "jspdf"],
       link: "https://koperasi-unipdu.web.app/",
       logo: require("./assets/images/koperasiLogo.png")
     },
     {
       title: "Wholesale Inventory Management System",
-      description: "A B2B wholesale distribution portal managing product catalog, real-time inventory adjustments, dual-unit pricing, and POS checkout terminal.",
+      description:
+        "A B2B wholesale distribution portal managing product catalog, real-time inventory adjustments, dual-unit pricing, and POS checkout terminal.",
       techStack: ["React 19", "Firebase", "Vite", "Tailwind CSS"],
       link: "https://sentra-distribusi-rejoso-gemilang.vercel.app/",
       logo: require("./assets/images/distribusirejosoLogo.png")
     },
     {
       title: "Canteen375 POS App",
-      description: "A multi-platform localized POS and ERP terminal supporting atomic inventory deductions, open bill accounts, and Sunmi thermal printing hardware.",
+      description:
+        "A multi-platform localized POS and ERP terminal supporting atomic inventory deductions, open bill accounts, and Sunmi thermal printing hardware.",
       techStack: ["Flutter", "Firebase", "SQLite", "Sunmi Printer"],
       link: "https://github.com/fajrulalam/point_of_sales_app_v3",
       logo: "devicon-flutter-plain colored"
     },
     {
       title: "Canteen375 Kitchen Display System",
-      description: "A real-time native Android kitchen controller display aggregating pending food preparation counts, tracking preparation timers, and supporting swipe-to-serve actions.",
+      description:
+        "A real-time native Android kitchen controller display aggregating pending food preparation counts, tracking preparation timers, and supporting swipe-to-serve actions.",
       techStack: ["Android Studio", "Java", "Firebase Firestore", "Gson"],
       link: "https://github.com/fajrulalam/orders-to-be-served",
       logo: "devicon-android-plain colored"

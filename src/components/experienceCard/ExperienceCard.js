@@ -25,7 +25,7 @@ export default function ExperienceCard({cardInfo}) {
         ))
       : null;
   };
-  
+
   const {isDark} = useContext(StyleContext);
 
   return (
@@ -33,10 +33,17 @@ export default function ExperienceCard({cardInfo}) {
       <Fade left duration={1000}>
         <div className="experience-card">
           {cardInfo.companylogo && (
-            <div 
-              className={`experience-card-left ${isRoaring ? "roar-animation" : ""}`}
+            <div
+              className={`experience-card-left ${
+                isRoaring ? "roar-animation" : ""
+              }`}
               onClick={handleRoar}
-              style={{ cursor: cardInfo.company === "Philip Morris International" ? "pointer" : "default" }}
+              style={{
+                cursor:
+                  cardInfo.company === "Philip Morris International"
+                    ? "pointer"
+                    : "default"
+              }}
             >
               <img
                 crossOrigin={"anonymous"}

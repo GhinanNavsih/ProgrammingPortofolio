@@ -10,13 +10,27 @@ export default function StackProgress() {
   const {isDark} = useContext(StyleContext);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  console.log("[StackProgress] Rendered. Viewport width:", window.innerWidth, "isDark:", isDark);
+  console.log(
+    "[StackProgress] Rendered. Viewport width:",
+    window.innerWidth,
+    "isDark:",
+    isDark
+  );
 
   useEffect(() => {
     const el = document.querySelector(".skills-image");
     if (el) {
       const styles = window.getComputedStyle(el);
-      console.log("[Diagnostics] .skills-image is in DOM. Display:", styles.display, "Width:", styles.width, "Visibility:", styles.visibility, "Flex:", styles.flex);
+      console.log(
+        "[Diagnostics] .skills-image is in DOM. Display:",
+        styles.display,
+        "Width:",
+        styles.width,
+        "Visibility:",
+        styles.visibility,
+        "Flex:",
+        styles.flex
+      );
     } else {
       console.log("[Diagnostics] .skills-image is NOT in DOM");
     }
@@ -43,60 +57,82 @@ export default function StackProgress() {
           <div className="portfolio-header-container">
             <h1 className="skills-heading">My Project Portofolio</h1>
             <div className="carousel-nav-buttons">
-              <button 
-                onClick={handlePrev} 
+              <button
+                onClick={handlePrev}
                 disabled={currentIndex === 0}
-                className={`nav-btn prev-btn ${currentIndex === 0 ? "disabled" : ""}`}
+                className={`nav-btn prev-btn ${
+                  currentIndex === 0 ? "disabled" : ""
+                }`}
                 aria-label="Previous Project"
               >
                 <i className="fas fa-chevron-left"></i>
               </button>
-              <button 
-                onClick={handleNext} 
+              <button
+                onClick={handleNext}
                 disabled={currentIndex >= projects.length - 1}
-                className={`nav-btn next-btn ${currentIndex >= projects.length - 1 ? "disabled" : ""}`}
+                className={`nav-btn next-btn ${
+                  currentIndex >= projects.length - 1 ? "disabled" : ""
+                }`}
                 aria-label="Next Project"
               >
                 <i className="fas fa-chevron-right"></i>
               </button>
             </div>
           </div>
-          
+
           <div className="carousel-outer-wrapper">
-            <div 
+            <div
               className="carousel-inner-slider"
               style={{
                 transform: `translateX(calc(-1 * ${currentIndex} * (var(--card-width) + var(--card-gap))))`
               }}
             >
               {projects.map((project, i) => (
-                <div 
-                  key={i} 
-                  className={`portfolio-card ${isDark ? "portfolio-card-dark" : "portfolio-card-light"}`}
+                <div
+                  key={i}
+                  className={`portfolio-card ${
+                    isDark ? "portfolio-card-dark" : "portfolio-card-light"
+                  }`}
                 >
                   <div className="portfolio-card-content">
                     <div className="card-header-row">
                       {project.logo ? (
                         <div className="card-logo-container">
-                          {typeof project.logo === "string" && (project.logo.startsWith("fa") || project.logo.startsWith("devicon")) ? (
+                          {typeof project.logo === "string" &&
+                          (project.logo.startsWith("fa") ||
+                            project.logo.startsWith("devicon")) ? (
                             <i className={`${project.logo} card-logo-icon`}></i>
                           ) : (
-                            <img src={project.logo} alt="" className="card-logo-img" />
+                            <img
+                              src={project.logo}
+                              alt=""
+                              className="card-logo-img"
+                            />
                           )}
                         </div>
                       ) : null}
-                      <h3 className={isDark ? "card-title-dark" : "card-title-light"}>
+                      <h3
+                        className={
+                          isDark ? "card-title-dark" : "card-title-light"
+                        }
+                      >
                         {project.title}
                       </h3>
                     </div>
-                    <p className={`card-desc ${isDark ? "desc-dark" : "desc-light"}`}>
+                    <p
+                      className={`card-desc ${
+                        isDark ? "desc-dark" : "desc-light"
+                      }`}
+                    >
                       {project.description}
                     </p>
                     <div className="card-techs">
                       {project.techStack.map((tech, idx) => (
-                        <span 
-                          key={idx} 
-                          className={`tech-tag ${isDark ? "tag-dark" : "tag-light"}`}
+                        <span
+                          key={idx}
+                          className={`tech-tag ${
+                            isDark ? "tag-dark" : "tag-light"
+                          }`}
                         >
                           {tech}
                         </span>
@@ -104,11 +140,13 @@ export default function StackProgress() {
                     </div>
                   </div>
                   <div className="portfolio-card-footer">
-                    <a 
-                      href={project.link} 
-                      target="_blank" 
+                    <a
+                      href={project.link}
+                      target="_blank"
                       rel="noopener noreferrer"
-                      className={`card-link-btn ${isDark ? "btn-dark" : "btn-light"}`}
+                      className={`card-link-btn ${
+                        isDark ? "btn-dark" : "btn-light"
+                      }`}
                     >
                       View Project <i className="fas fa-external-link-alt"></i>
                     </a>
@@ -123,10 +161,7 @@ export default function StackProgress() {
           {illustration.animated ? (
             <DisplayLottie animationData={Build} />
           ) : (
-            <img
-              alt="Skills"
-              src={require("../../assets/images/skill.svg")}
-            />
+            <img alt="Skills" src={require("../../assets/images/skill.svg")} />
           )}
         </div>
       </div>

@@ -20,26 +20,26 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Fajrul Alam",
+  title: "Hi all, I'm Fajrul",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "IT Graduate Trainee at Philip Morris International || ex-Tiket.com"
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/fajrulalamn",
+  linkedin: "https://www.linkedin.com/in/fajrulalam/",
+  gmail: "fajrulalam01@gmail.com",
+  gitlab: "",
+  facebook: "",
+  medium: "",
+  stackoverflow: "",
+  instagram: "https://www.instagram.com/fajrul_alam/",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +49,16 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "A DEDICATED SOFTWARE QUALITY ASSURANCE ENGINEER AND DATA ENTHUSIAST",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Ensure defect-free product delivery by combining automated and manual quality assurance methodologies"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Design and implement robust machine learning, deep learning, and data science research models"
+    ),
+    emoji(
+      "⚡ Architect and configure cloud infrastructure using AWS Cloud, Data Analytics, and Machine Learning services"
     )
   ],
 
@@ -73,48 +75,48 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
     },
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
+      skillName: "aws",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "sql-database",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "Dart",
+      fontAwesomeClassname: "devicon-dart-plain"
+    },
+    {
+      skillName: "Flutter",
+      fontAwesomeClassname: "devicon-flutter-plain"
+    },
+    {
+      skillName: "React.js",
+      fontAwesomeClassname: "devicon-react-original"
+    },
+    {
+      skillName: "Next.js",
+      fontAwesomeClassname: "devicon-nextjs-plain"
+    },
+    {
+      skillName: "Node.js",
+      fontAwesomeClassname: "devicon-nodejs-plain"
+    },
+    {
+      skillName: "Firebase",
+      fontAwesomeClassname: "devicon-firebase-plain"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -126,23 +128,26 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Institut Teknologi Sepuluh Nopember (ITS)",
+      logo: require("./assets/images/itsLogo.png"),
+      subHeader: "Master's degree, Information Technology",
+      duration: "2022 - 2024",
+      desc: "GPA: 3.93/4.00. Awarded the best graduate of the Master's degree in Information Technology.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Fast-track master's degree scholarship program for high-achieving students.",
+        "Published multiple research papers on machine learning and software engineering systems."
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Institut Teknologi Sepuluh Nopember (ITS)",
+      logo: require("./assets/images/itsLogo.png"),
+      subHeader: "Bachelor's degree, Information Technology",
+      duration: "2019 - 2022",
+      desc: "GPA: 3.75/4.00. Graduated with honors.",
+      descBullets: [
+        "Focused on software engineering, database design, and mobile application development.",
+        "Active in student organizations (Himpunan Mahasiswa Sistem Informasi ITS)."
+      ]
     }
   ]
 };
@@ -174,29 +179,47 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Graduate Trainee - Technology",
+      company: "Philip Morris International",
+      companylogo: require("./assets/images/Phillip Morris International Logo.png"),
+      date: "April 2026 – Present",
+      desc: "Part of the technology department's graduate rotation program, driving innovation and digital solutions within a global corporation.",
+      descBullets: []
+    },
+    {
+      role: "Software Quality Assurance Engineer",
+      company: "tiket.com",
+      companylogo: require("./assets/images/tiketLogo.png"),
+      date: "August 2024 – April 2026",
+      desc: "Ensuring defect-free product delivery by combining automated testing with a human touch. Constantly pushing for innovation in the field of Quality Assurance.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Collaborated with cross-functional teams to deliver high-quality features.",
+        "Awarded 'AI Innovator' and 'QA Rockstar' (employee of the quarter) twice during first year."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Software Quality Assurance Engineer",
+      company: "tiket.com",
+      companylogo: require("./assets/images/tiketLogo.png"),
+      date: "November 2023 – May 2024",
+      desc: "Contributed to the continuous improvement of QA processes and quality standards for critical product components.",
+      descBullets: []
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Technology Directorate Intern",
+      company: "PT. XL Axiata Tbk",
+      companylogo: require("./assets/images/xlLogo.png"),
+      date: "January 2022 – June 2022",
+      desc: "Assisted in technology operations and network infrastructure monitoring within the technology directorate.",
+      descBullets: []
+    },
+    {
+      role: "Research Assistant",
+      company: "PT. Tatacipta Teknologi Indonesia",
+      companylogo: require("./assets/images/tataciptaLogo.png"),
+      date: "December 2020 – June 2021",
+      desc: "Contributed to incremental advancements and betterment of government websites, applications, and online services by easing the transfer of knowledge through research.",
+      descBullets: []
     }
   ]
 };
@@ -205,7 +228,7 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -239,7 +262,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -252,52 +275,44 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "AI Innovator & QA Rockstar",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
+        "Awarded Employee of the Quarter twice during the first year at tiket.com for QA excellence and pushing innovation.",
+      image: require("./assets/images/tiketLogo.png"),
+      imageAlt: "Tiket.com Logo",
+      footerLink: []
     },
     {
-      title: "Google Assistant Action",
+      title: "AWS Academy Graduate - Cloud Architecting",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+        "Issued by Amazon Web Services (AWS) in June 2021. Demonstrates expertise in designing cloud architecture solutions.",
+      image: require("./assets/images/awsLogo.png"),
+      imageAlt: "AWS Logo",
+      footerLink: []
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
+      title: "AWS Academy Graduate - Data Analytics",
+      subtitle:
+        "Issued by Amazon Web Services (AWS) in July 2021. Validates capabilities in data analytics platforms and pipelines.",
+      image: require("./assets/images/awsLogo.png"),
+      imageAlt: "AWS Logo",
+      footerLink: []
+    },
+    {
+      title: "AWS Academy Graduate - Machine Learning Foundations",
+      subtitle:
+        "Issued by Amazon Web Services (AWS) in July 2021. Covers machine learning pipelines and foundation model training.",
+      image: require("./assets/images/awsLogo.png"),
+      imageAlt: "AWS Logo",
+      footerLink: []
+    },
+    {
+      title: "Applied Data Science with Python - Level 2",
+      subtitle:
+        "Issued by IBM in September 2021. Certifies advanced data science modeling, analysis, and visualization in Python.",
+      image: require("./assets/images/ibmLogo.png"),
+      imageAlt: "IBM Logo",
+      footerLink: []
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -324,7 +339,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +358,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +371,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -373,7 +388,7 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  email_address: "fajrulalam01@gmail.com"
 };
 
 // Twitter Section
@@ -381,6 +396,61 @@ const contactInfo = {
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
   display: true // Set true to display this section, defaults to false
+};
+
+const portfolioProjects = {
+  display: true,
+  projects: [
+    {
+      title: "Asrama Management System",
+      description: "An integrated web platform for managing registrations, payments, attendance monitoring, and leave permissions for boarding school students.",
+      techStack: ["Next.js", "Firebase", "Zustand", "Tailwind CSS"],
+      link: "https://esantren-chosyiah.vercel.app/",
+      logo: require("./assets/images/esantrenLogo.png")
+    },
+    {
+      title: "Canteen375 Membership App",
+      description: "A customer loyalty, self-ordering, and real-time leaderboard gamification platform designed for campus canteens.",
+      techStack: ["Next.js", "Firebase", "TypeScript", "Tailwind CSS"],
+      link: "https://canteen-375-registration.vercel.app/leaderboard",
+      logo: require("./assets/images/canteen375Logo.png")
+    },
+    {
+      title: "Sistem Administrasi Keuangan UNIPDU",
+      description: "An enterprise internal admin console managing employee directories, multi-tiered salary matrices, automated grid-aligned OCR attendance sheet scanners, and PDF payslip deliveries.",
+      techStack: ["Next.js", "Firebase", "TypeScript", "Python (OCR)"],
+      link: "https://saku.unipdu.ac.id",
+      logo: require("./assets/images/yapetiduLogo.png")
+    },
+    {
+      title: "Koperasi UNIPDU SuperApp",
+      description: "An enterprise cooperative system managing retail transactions, savings-loan accounts, multi-role financial audits, and barcode rewards.",
+      techStack: ["React.js", "Firebase", "Tailwind CSS", "jspdf"],
+      link: "https://koperasi-unipdu.web.app/",
+      logo: require("./assets/images/koperasiLogo.png")
+    },
+    {
+      title: "Wholesale Inventory Management System",
+      description: "A B2B wholesale distribution portal managing product catalog, real-time inventory adjustments, dual-unit pricing, and POS checkout terminal.",
+      techStack: ["React 19", "Firebase", "Vite", "Tailwind CSS"],
+      link: "https://sentra-distribusi-rejoso-gemilang.vercel.app/",
+      logo: require("./assets/images/distribusirejosoLogo.png")
+    },
+    {
+      title: "Canteen375 POS App",
+      description: "A multi-platform localized POS and ERP terminal supporting atomic inventory deductions, open bill accounts, and Sunmi thermal printing hardware.",
+      techStack: ["Flutter", "Firebase", "SQLite", "Sunmi Printer"],
+      link: "https://github.com/fajrulalam/point_of_sales_app_v3",
+      logo: "devicon-flutter-plain colored"
+    },
+    {
+      title: "Canteen375 Kitchen Display System",
+      description: "A real-time native Android kitchen controller display aggregating pending food preparation counts, tracking preparation timers, and supporting swipe-to-serve actions.",
+      techStack: ["Android Studio", "Java", "Firebase Firestore", "Gson"],
+      link: "https://github.com/fajrulalam/orders-to-be-served",
+      logo: "devicon-android-plain colored"
+    }
+  ]
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
@@ -403,5 +473,6 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection
+  resumeSection,
+  portfolioProjects
 };

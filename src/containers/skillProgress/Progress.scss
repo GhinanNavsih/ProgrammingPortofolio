@@ -1,57 +1,316 @@
 @import "../../_globalColor";
 
-.meter {
-  height: 20px;
-  position: relative;
-  background: $progressBarBackground;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
-}
-.meter > span {
-  display: block;
-  height: 100%;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-color: $progressBarSpanBG;
-  position: relative;
-  overflow: hidden;
-}
-.skill {
-  line-height: 3.5vw;
-}
-.skill-bars {
-  font-size: 28px;
-  width: 40%;
-}
 .skills-container {
+  --card-width: 400px;
+  --card-gap: 30px;
   display: flex;
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 2rem;
+  overflow: hidden; /* Prevent cards from causing a horizontal page scrollbar */
+  position: relative;
 }
+
 .skills-container > * {
   flex: 1;
   margin-bottom: 30px;
 }
+
+.skills-bar {
+  position: relative;
+  overflow: visible; /* Allows sliding cards to slide past the 50% boundary into the Lottie area */
+  z-index: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.carousel-nav-buttons {
+  display: flex;
+  gap: 12px;
+  margin-right: 20px;
+}
+
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(108, 99, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  color: $titleColor;
+
+  i {
+    font-size: 0.95rem;
+  }
+
+  &:hover:not(.disabled) {
+    background: #6c63ff;
+    border-color: #6c63ff;
+    color: #ffffff;
+    transform: scale(1.08);
+  }
+
+  &.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    border-color: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.carousel-outer-wrapper {
+  overflow: visible;
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.carousel-inner-slider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: var(--card-gap);
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  width: max-content;
+}
+
+.portfolio-card {
+  width: var(--card-width);
+  min-height: 220px;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px $lightBoxShadow;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(108, 99, 255, 0.15);
+    border-color: rgba(108, 99, 255, 0.3);
+  }
+}
+
+.portfolio-card-light {
+  background: #ffffff;
+}
+
+.portfolio-card-dark {
+  background: #1d2230;
+  border-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    box-shadow: 0 8px 30px rgba(108, 99, 255, 0.25);
+    border-color: rgba(108, 99, 255, 0.4);
+  }
+}
+
+.card-title-light {
+  font-size: 1.25rem;
+  color: $titleColor;
+  margin: 0;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-title-dark {
+  font-size: 1.25rem;
+  color: $textColorDark;
+  margin: 0;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.desc-light {
+  color: $subTitle;
+}
+
+.desc-dark {
+  color: #a0aec0;
+}
+
+.card-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tech-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.tag-light {
+  background: rgba(108, 99, 255, 0.08);
+  color: #55198b;
+}
+
+.tag-dark {
+  background: rgba(108, 99, 255, 0.15);
+  color: #aaa5ff;
+}
+
+.card-link-btn {
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  i {
+    font-size: 0.75rem;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover i {
+    transform: translate(2px, -2px);
+  }
+}
+
+.btn-light {
+  color: #55198b;
+  &:hover {
+    color: #8c43ce;
+  }
+}
+
+.btn-dark {
+  color: #aaa5ff;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.card-header-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.card-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.card-logo-img {
+  height: 60px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.card-logo-icon {
+  font-size: 3rem;
+  color: #6c63ff;
+}
+
+.skills-image {
+  position: relative;
+  z-index: 10; /* Keep it on top of sliding cards */
+  background-color: $lightBackground1; /* Solid mask for light theme */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 30px;
+
+  /* Edge fade mask so cards fade out smoothly as they slide under the Lottie */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -80px;
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), $lightBackground1);
+    pointer-events: none;
+    z-index: 11;
+  }
+}
+
 .skills-image > img {
   margin-left: 80px;
   max-width: 90%;
   height: auto;
 }
 
-/* Media Query */
+/* Dark mode styling overrides */
+.dark-mode {
+  .nav-btn {
+    border-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
 
-@media (max-width: 1456px) {
-  .skills-bar {
-    line-height: 4rem;
+    &:hover:not(.disabled) {
+      background: #6c63ff;
+      border-color: #6c63ff;
+      color: #ffffff;
+    }
+
+    &.disabled {
+      border-color: rgba(255, 255, 255, 0.05);
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
+
+  .skills-image {
+    background-color: $darkBackground; /* Solid mask for dark theme */
+
+    &::before {
+      background: linear-gradient(to right, rgba(23, 28, 40, 0), $darkBackground);
+    }
+  }
+
+  .card-logo-icon {
+    color: #aaa5ff;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1456px) {
   .skills-image {
     display: none;
-    order: 2;
+  }
+  .skills-bar {
+    width: 100%;
+  }
+  .carousel-outer-wrapper {
+    overflow: hidden; /* Clip cards locally since there's no Lottie to slide behind anymore */
   }
 }
 
@@ -60,11 +319,26 @@
     flex-direction: column;
   }
   .skills-bar {
-    line-height: 3rem;
+    width: 100%;
     margin: 20px;
   }
-  .skills-image {
-    display: none;
-    order: 2;
+  .carousel-outer-wrapper {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    --card-width: 280px;
+    --card-gap: 15px;
+  }
+  .portfolio-card {
+    padding: 16px;
+  }
+  .card-logo-img {
+    height: 48px !important;
+  }
+  .card-logo-icon {
+    font-size: 2.2rem !important;
   }
 }

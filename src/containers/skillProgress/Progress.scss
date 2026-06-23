@@ -250,6 +250,13 @@
   align-items: center;
   margin-bottom: 30px;
 
+  /* Align Lottie wrapper to the right */
+  & > div {
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+  }
+
   /* Edge fade mask so cards fade out smoothly as they slide under the Lottie */
   &::before {
     content: "";

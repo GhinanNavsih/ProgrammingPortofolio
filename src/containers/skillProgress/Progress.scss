@@ -325,7 +325,14 @@
 }
 
 /* Media Queries */
-@media (max-width: 1456px) {
+@media (max-width: 1460px) and (min-width: 1025px) {
+  .skills-container {
+    --card-width: 320px;
+    --card-gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
   .skills-image {
     display: none;
   }

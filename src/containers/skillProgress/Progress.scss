@@ -18,6 +18,7 @@
 
 .skills-bar {
   flex: 1.8;
+  min-width: 0; /* Allow the flex item to shrink below its content width */
   position: relative;
   overflow: visible; /* Allows sliding cards to slide past the boundary into the Lottie area */
   z-index: 1;

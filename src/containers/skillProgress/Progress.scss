@@ -246,15 +246,21 @@
   z-index: 10; /* Keep it on top of sliding cards */
   background-color: $lightBackground1; /* Solid mask for light theme */
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 
-  /* Align Lottie wrapper to the right */
-  & > div {
-    width: 90%;
-    max-width: 600px;
-    margin-left: auto;
+  /* Opaque overlay mask extending past the right edge of container into viewport margin */
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100%;
+    background-color: $lightBackground1;
+    pointer-events: none;
+    z-index: 10;
   }
 
   /* Edge fade mask so cards fade out smoothly as they slide under the Lottie */
@@ -300,6 +306,10 @@
 
     &::before {
       background: linear-gradient(to right, rgba(23, 28, 40, 0), $darkBackground);
+    }
+
+    &::after {
+      background-color: $darkBackground;
     }
   }
 

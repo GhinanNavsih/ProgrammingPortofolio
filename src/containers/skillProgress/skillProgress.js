@@ -1,4 +1,4 @@
-import React, {useState, useContext} from "react";
+import React, {useState, useContext, useEffect} from "react";
 import "./Progress.scss";
 import {illustration, portfolioProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
@@ -11,6 +11,16 @@ export default function StackProgress() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   console.log("[StackProgress] Rendered. Viewport width:", window.innerWidth, "isDark:", isDark);
+
+  useEffect(() => {
+    const el = document.querySelector(".skills-image");
+    if (el) {
+      const styles = window.getComputedStyle(el);
+      console.log("[Diagnostics] .skills-image is in DOM. Display:", styles.display, "Width:", styles.width, "Visibility:", styles.visibility, "Flex:", styles.flex);
+    } else {
+      console.log("[Diagnostics] .skills-image is NOT in DOM");
+    }
+  }, []);
 
   if (!portfolioProjects || !portfolioProjects.display) {
     return null;
